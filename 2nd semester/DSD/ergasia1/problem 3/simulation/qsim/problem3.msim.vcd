@@ -1,0 +1,118 @@
+$comment
+	File created using the following command:
+		vcd file problem3.msim.vcd -direction
+$end
+$date
+	Fri Apr 15 16:42:01 2022
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module problem3_vhd_vec_tst $end
+$var wire 1 ! f $end
+$var wire 1 " x1 $end
+$var wire 1 # x2 $end
+$var wire 1 $ x3 $end
+
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var wire 1 ( devoe $end
+$var wire 1 ) devclrn $end
+$var wire 1 * devpor $end
+$var wire 1 + ww_devoe $end
+$var wire 1 , ww_devclrn $end
+$var wire 1 - ww_devpor $end
+$var wire 1 . ww_x1 $end
+$var wire 1 / ww_x2 $end
+$var wire 1 0 ww_x3 $end
+$var wire 1 1 ww_f $end
+$var wire 1 2 \x2~combout\ $end
+$var wire 1 3 \x3~combout\ $end
+$var wire 1 4 \x1~combout\ $end
+$var wire 1 5 \f~0_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0"
+0#
+0$
+0%
+1&
+x'
+1(
+1)
+1*
+1+
+1,
+1-
+0.
+0/
+00
+11
+02
+03
+04
+15
+$end
+#10000
+1$
+10
+13
+05
+01
+0!
+#20000
+0$
+1#
+00
+1/
+12
+03
+15
+11
+1!
+#30000
+1$
+10
+13
+05
+01
+0!
+#40000
+0$
+0#
+1"
+00
+0/
+1.
+14
+02
+03
+#50000
+1$
+10
+13
+15
+11
+1!
+#60000
+0$
+1#
+00
+1/
+12
+03
+#70000
+1$
+10
+13
+#80000

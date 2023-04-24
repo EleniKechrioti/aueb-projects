@@ -1,0 +1,319 @@
+$comment
+	File created using the following command:
+		vcd file problem1.msim.vcd -direction
+$end
+$date
+	Fri Apr 15 16:55:29 2022
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module problem1_vhd_vec_tst $end
+$var wire 1 ! f $end
+$var wire 1 " x1 $end
+$var wire 1 # x2 $end
+$var wire 1 $ x3 $end
+$var wire 1 % x4 $end
+$var wire 1 & x5 $end
+
+$scope module i1 $end
+$var wire 1 ' gnd $end
+$var wire 1 ( vcc $end
+$var wire 1 ) unknown $end
+$var wire 1 * devoe $end
+$var wire 1 + devclrn $end
+$var wire 1 , devpor $end
+$var wire 1 - ww_devoe $end
+$var wire 1 . ww_devclrn $end
+$var wire 1 / ww_devpor $end
+$var wire 1 0 ww_x1 $end
+$var wire 1 1 ww_x2 $end
+$var wire 1 2 ww_x3 $end
+$var wire 1 3 ww_x4 $end
+$var wire 1 4 ww_x5 $end
+$var wire 1 5 ww_f $end
+$var wire 1 6 \x1~combout\ $end
+$var wire 1 7 \x4~combout\ $end
+$var wire 1 8 \x2~combout\ $end
+$var wire 1 9 \x5~combout\ $end
+$var wire 1 : \I3|out1~0_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0"
+0#
+0$
+0%
+0&
+0'
+1(
+x)
+1*
+1+
+1,
+1-
+1.
+1/
+00
+01
+02
+03
+04
+15
+06
+07
+08
+09
+1:
+$end
+#10000
+1&
+14
+19
+0:
+05
+0!
+#20000
+0&
+1%
+04
+13
+17
+09
+1:
+15
+1!
+#30000
+1&
+14
+19
+0:
+05
+0!
+#40000
+0&
+0%
+1$
+04
+03
+12
+07
+09
+1:
+15
+1!
+#50000
+1&
+14
+19
+0:
+05
+0!
+#60000
+0&
+1%
+04
+13
+17
+09
+1:
+15
+1!
+#70000
+1&
+14
+19
+0:
+05
+0!
+#80000
+0&
+0%
+0$
+1#
+04
+03
+02
+11
+18
+07
+09
+#90000
+1&
+14
+19
+#100000
+0&
+1%
+04
+13
+17
+09
+1:
+15
+1!
+#110000
+1&
+14
+19
+#120000
+0&
+0%
+1$
+04
+03
+12
+07
+09
+0:
+05
+0!
+#130000
+1&
+14
+19
+#140000
+0&
+1%
+04
+13
+17
+09
+1:
+15
+1!
+#150000
+1&
+14
+19
+#160000
+0&
+0%
+0$
+0#
+1"
+04
+03
+02
+01
+10
+16
+08
+07
+09
+#170000
+1&
+14
+19
+0:
+05
+0!
+#180000
+0&
+1%
+04
+13
+17
+09
+#190000
+1&
+14
+19
+#200000
+0&
+0%
+1$
+04
+03
+12
+07
+09
+1:
+15
+1!
+#210000
+1&
+14
+19
+0:
+05
+0!
+#220000
+0&
+1%
+04
+13
+17
+09
+#230000
+1&
+14
+19
+#240000
+0&
+0%
+0$
+1#
+04
+03
+02
+11
+18
+07
+09
+#250000
+1&
+14
+19
+#260000
+0&
+1%
+04
+13
+17
+09
+1:
+15
+1!
+#270000
+1&
+14
+19
+#280000
+0&
+0%
+1$
+04
+03
+12
+07
+09
+0:
+05
+0!
+#290000
+1&
+14
+19
+#300000
+0&
+1%
+04
+13
+17
+09
+1:
+15
+1!
+#310000
+1&
+14
+19
+#320000

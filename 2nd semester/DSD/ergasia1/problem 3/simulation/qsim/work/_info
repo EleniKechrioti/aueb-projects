@@ -1,0 +1,96 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/User/Desktop/DSD086/problem 3/simulation/qsim
+Eproblem3
+Z1 w1650030118
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx4 maxv 14 maxv_atom_pack 0 22 `YXhbnPNiS:bB3zbmbF772
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx4 maxv 15 maxv_components 0 22 EJJMbHV<EJ`DANOSmdPih1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z8 8problem3.vho
+Z9 Fproblem3.vho
+l0
+L35
+V2<3bjhcB0m7oIl82mKPVi3
+!s100 dCX?29MOgo6VDP]NW1oYN1
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1650030119
+!i10b 1
+Z12 !s108 1650030119.000000
+Z13 !s90 -work|work|problem3.vho|
+Z14 !s107 problem3.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 8 problem3 0 22 2<3bjhcB0m7oIl82mKPVi3
+l66
+L47
+VnbTQYIZQfYIjVz6k79<gA0
+!s100 3S2SSPCS8i>mBCk8Pb=O_2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eproblem3_vhd_vec_tst
+Z17 w1650030117
+R6
+R7
+R0
+Z18 8Waveform.vwf.vht
+Z19 FWaveform.vwf.vht
+l0
+L32
+VJB;eiWadQfaTSAMK[z1122
+!s100 VH1iT4FH06?MJ7WP<3z4J0
+R10
+32
+Z20 !s110 1650030120
+!i10b 1
+R12
+Z21 !s90 -work|work|Waveform.vwf.vht|
+Z22 !s107 Waveform.vwf.vht|
+!i113 1
+R15
+R16
+Aproblem3_arch
+R6
+R7
+DEx4 work 20 problem3_vhd_vec_tst 0 22 JB;eiWadQfaTSAMK[z1122
+l49
+L34
+V^?79?TOWD]7ikXi9hn3Pj1
+!s100 zFebnYQWX`74?;NcIenEi1
+R10
+32
+R20
+!i10b 1
+R12
+R21
+R22
+!i113 1
+R15
+R16

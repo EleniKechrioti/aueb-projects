@@ -1,0 +1,14 @@
+|problem2
+F <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+x3 => inst5.IN0
+x3 => inst4.IN1
+x3 => inst7.IN1
+x2 => inst5.IN1
+x2 => inst4.IN0
+x2 => inst6.IN1
+x1 => inst.IN0
+x4 => inst4.IN2
+x4 => inst6.IN0
+x4 => inst7.IN0
+
+
