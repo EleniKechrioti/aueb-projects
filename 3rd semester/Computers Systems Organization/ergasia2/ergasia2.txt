@@ -1,0 +1,110 @@
+# Kechrioti Eleni 
+#AM: 3210078
+
+.text
+
+.globl main
+
+main:
+
+	la $a0, msg1
+	li $v0, 4			#print "Enter postfix expression:\n"
+	syscall
+	
+	again:
+		li $v0, 5		# ch = readInt()
+		syscall
+		
+		sw $v0, ch
+		
+		lw $t0, ch
+		beq $t0, ' ', lb1
+		li $t1, 0
+		sw $t1, number
+	
+		lw $t1, number
+		again2:
+			blt $t0, '0', go
+			bgt $t0, '9', go
+			mul $t1, $t1, 10
+			add $t1, $t1, $t0
+			sub $t1, $t1, 48
+			j again2
+
+		beq $t0, '+', op
+		beq $t0, '-', op
+		beq $t0, '*', op
+		beq $t0, '/', op
+		j lb2
+
+		op:
+			#x2= pop ();
+ 			#x1= pop ();
+ 			#result=calc(x1,ch,x2);
+ 			#push (result);
+
+		lb2:
+			beq $t0, '=', lb3
+			#push (number);
+			j again
+
+	
+
+	lb3:				#out of while1
+		lw $t2, i
+		li $t3, 1
+		bne $t2, $t3, lb4
+			la $a0, msg1
+			li $v0, 4			#print "Postfix Evaluation: "+ p[0]
+			syscall
+
+			j exit
+		lb4:
+			la $a0, error_msg1
+			li $v0, 4			#print "Invalid Postfix"
+			syscall	
+			j exit
+			
+
+
+	pop:
+		lw $t5, i
+		bne $t5, 0, pop1
+		la $a0, error_msg1		#print "Invalid Postfix"
+		li $v0, 4
+		syscall
+		
+		j exit
+		pop1:
+			sub $t5, $t5, 1
+			#return (p[i])
+		jr $ra
+
+	push:
+		#p[i] = result;
+		#i++;
+
+	calc:
+
+		li $t6, 0
+
+
+
+
+	exit:
+		li $v0, 10
+		syscall
+
+
+.data
+
+MAX:		.space		4		#int max
+i :		.space		4		#int i 
+x1:		.space		4		#int x1
+x2:		.space		4		#int x2
+ch:		.space		4		#int ch
+number:	.space		4		#int number
+result:	.word			0		#int result = 0
+error_msg1:	.asciiz		"Invalid Postfix"
+error_msg2:	.asciiz		""
+msg1:		.asciiz		"Postfix Evaluation: "	
