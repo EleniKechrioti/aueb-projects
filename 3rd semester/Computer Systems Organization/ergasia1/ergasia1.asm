@@ -1,9 +1,5 @@
 
 
-# Kechrioti Eleni       AM: 3210078
-
-
-
 		.text
 		.globl main
 
