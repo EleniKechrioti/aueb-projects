@@ -5,6 +5,7 @@ Othello is a two-player game, and here the player plays against the AI, which is
 Our report and source code can be found in the repository [Othello-Riversi](https://github.com/EleniKechrioti/Othello-Reversi). 
 
 More information on the repository linked above.
+The description of the assigment in greek is the pdf in this folder.
 
 ## Features
 - Responsive AI using MinMax algorithm with alpha-beta pruning
