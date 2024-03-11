@@ -1,9 +1,8 @@
 ## Theseus - Maze Solving
 
 Theseus is a java based program for the course of Data Structures at AUEB. It was one of the three assignments done in my 
-3rd semester studying there. The description of the 
-[assignment](https://github.com/EleniKechrioti/Maze-Solving-Theseus/blob/main/DS22-project1.pdf)
-and the final [report](https://github.com/EleniKechrioti/Maze-Solving-Theseus/blob/main/project1-report.pdf)
+3rd semester studying there. The description of the assignment
+and the final report
 can be found in greek in this repository.
 
 ### Description
