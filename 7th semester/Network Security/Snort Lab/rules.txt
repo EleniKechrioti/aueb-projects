@@ -1,0 +1,7 @@
+alert icmp 172.16.1.55 any -> 172.16.1.44 any (msg:"ICMP Ping with TTL 99";ttl:99;sid:100001;rev:1;)
+
+alert tcp 172.16.1.55 any -> 172.16.1.44 3389 (msg:"RDP Connection Attempt"; flags:S; sid:100002; rev:1;)
+
+alert tcp 172.16.1.55 any -> 172.16.1.44 21 (flags:S; msg:"Nmap Fast Scan Detected";sid:100003;rev:1;)
+
+alert tcp 172.16.1.55 any -> 172.16.1.44 22 (flags:F; msg: "Nmap FIN Scan Detected"; sid:100004; rev:1;)
