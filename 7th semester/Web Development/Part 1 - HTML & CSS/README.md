@@ -12,8 +12,16 @@ The first part of the website consists solely of static content, which is displa
 ## Interact with Renthub
 To explore the project, open the **index.html** page in your web browser. From the menu, navigate through the tasks (details provided below). To see the final version, visit **Exercise 5**, which integrates all previous tasks.
 
+<div align="center">
+    <img src=https://github.com/user-attachments/assets/bcc14e14-408f-4125-8d7b-04196bb33958 alt="Home" height="230">
+</div>
+<div align="center">
+    <img src=https://github.com/user-attachments/assets/4335d6cf-ca83-4e14-a533-f1983807c9c7 alt="Houses" height="240">
+    <img src=https://github.com/user-attachments/assets/2be5b292-26f1-41ef-8405-e9a32e4ea3da alt="House" height="240">
+</div>
+
 ## Implementation Details 
-This part of the project follows a structured development process, divided into five tasks:
+This part of the project follows a structured development process divided into five exercises:
 
 - **Exercise 1**: Focuses on the use of semantic HTML elements. Classes are applied primarily to **div** elements to provide meaning rather than for styling purposes, which is addressed in later tasks.
 
