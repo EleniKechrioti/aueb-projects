@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!--------------------------------------------------title-------------------------------------------------->
+        <title>RentHub</title>
+        <!------------------------------------------------meta-tags------------------------------------------------>
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "Εξευρευνείστε τον μεγάλο μας κατάλογο ακινήτων, αυτοκινήτων, ειδών τεχνολογίας και θέσεων εργασίας. Βρείτε αυτό που ψάχνετε εύκολα και απλά σε ένα μόνο πάτημα!">
+        <meta name = "keywords" content = "ενοικιάσεις, πωλήσεις, ακίνητα, οχήματα, ενοικιάσεις ακινήτων, πωλήσεις ακινήτων, ενοικιάσεις οχημάτων, πωλήσεις οχημάτων, ενοικιάσεις αυτοκινήτων, πωλήσεις αυτοκινήτων, ενοικιάσεις μηχανών, πωλήσεις μηχανών, αγορά εργασίας, θέσεις εργασίας, δουλειά, τεχνολογία">
+        <meta name = "author" content = "Eleni Kechrioti, Maria Schoinaki">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
+        <link rel="icon" href="../assets/logo.png" type="image/x-icon">
+        <script defer="" src="js.js"></script>
+    </head>
+
+    <body>
+        <!-----------------------------------------------header-tag------------------------------------------------>
+        
+        <header>
+            <div class = "logo">
+              <a href = "index.html"><img src = "../assets/transparent_logo.png" width = "300px"></a>
+              <h3>RentHub</h3>
+            </div>
+            <div class = "lower-header">
+                <nav>
+                    <ul>
+                        <li><a href = "index.html">Αρχική</a></li>
+                        <li><a href = "categories.html">Κατηγορίες</a></li>
+                        <li><a href = "aboutus.html">Σχετικά με μας</a></li>
+                        <li><a href = "contactus.html">Επικοινωνία</a></li>
+                        <li>
+                            <section class="dropdown">
+                                <button class="dropbtn">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    Ο λογαριασμός μου
+                                </button>
+                                <section class="dropdown-content">
+                                    <li><a href = "sign-up.html" >Δημιουργία</a></li>
+                                    <li><a href = "#">Σύνδεση</a></li>
+                                </section>
+                            </section>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <article class = "textbox">
+                <h2>Sign up</h2>
+                <p>
+                    Συνίσταται να αφιερώσεις λίγο από τον χρόνο σου για να απαντήσεις σε αυτό το 
+                    ερωτηματολόγιο σχετικά με το αγοραστικό σου προφίλ, έτσι ώστε να δέχεσαι τις κατάλληλες
+                    ενημερώσεις από εμάς.
+                </p>
+                <form>
+                    <div id="g">
+                    <article id="signup">
+                        <fieldset>
+                            <legend>Per info</legend>
+                            <label for="sign-up-full-name">
+                                Ονοματεπώνυμο:
+                            </label>
+                            <input autocomplete="name" id="sign-up-full-name" minlength="4" name="sign-up-full-name" placeholder="Jane Doe" required="" title="Full Name" type="text">
+                            <label for="sign-up-birthdate">
+                                Ημερομηνία Γέννησης:
+                            </label>
+                            <input autocomplete="bday" id="sign-up-birthdate" min="1900-01-01" name="sign-up-birthdate"
+                                placeholder="2022-11-03" required="" title="Birthdate" type="date" />
+                            <label for="sign-up-telephone">
+                                Αριθμός τηλεφώνου:
+                            </label>
+                            <input autocomplete="tel" id="sign-up-telephone" name="sign-up-birthdate"
+                            pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" placeholder="697.469.7855"
+                            required="" title="Personal Telephone" type="tel" />
+                            <label for="sign-up-address">
+                                Διεύθυνση:
+                            </label>
+                            <input autocomplete="organization" id="org-name" name="org-name"
+                                placeholder="gloy 5, athens 14346" title="Organization Name" type="text" />
+                            <label for="sign-up-email">
+                                Email:
+                            </label>
+                            <input autocomplete="email" id="sign-up-email" name="sign-up-email" placeholder="example@gmail.com" required="" title="email" type="email">
+                            <details>
+                                <summary>
+                                    Βοήθεια⬇
+                                </summary>
+                                <p>
+                                    Matches the following:<br>
+                                    123-456-7890<br>
+                                    (123) 456-7890
+                                </p>
+                            </details>
+                        </fieldset>
+                        <fieldset>
+                            <legend>
+                                Δημιουργία Λογαριασμού
+                            </legend>
+                            <label for="sign-up-username">
+                                Όνομα Χρήστη (τουλάχιστον 8 χαρακτήρες):
+                            </label>
+                            <input autocomplete="username" id="sign-up-username" name="sign-up-username"
+                                pattern="^[a-zA-Z0-9._-]{8,}$" placeholder="username" required=""
+                                title="Any letter from a-z, can use underscores, points and dashes, at least 8 characters long"
+                                type="text" />
+                            <label for="sign-up-password">
+                                Κωδικός Πρόσβασης:
+                            </label>
+                            <input autocomplete="new-password" id="sign-up-password" name="sign-up-password"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="password" required=""
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                type="password" />
+                            <label for="sign-up-pconfirmation">
+                                Επιβεβαίωση κωδικού:
+                            </label>
+                            <input id="sign-up-pconfirmation" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required=""
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                type="password" />
+                        </fieldset>
+                        <fieldset>
+                            <legend>
+                                Επικοινωνία
+                            </legend>
+                            <label for="contact">
+                                Διάλεξε αν επιθυμείς τον τρόπο που θες να ενημερώνεσαι για αγγελίες.
+                            </label>
+                            <select id="contact" name="contact">
+                                <option value="sms">
+                                    SMS
+                                </option>
+                                <option value="email">
+                                    Email
+                                </option>
+                                <option value="viber">
+                                    Viber
+                                </option>
+                                <option value="whats-app">
+                                    WhatsApp
+                                </option>
+                                <option value="facebook">
+                                    Facebook
+                                </option>
+                            </select>
+                            <div class="option">
+                                <input checked="" id="contact" name="contact-option" type="checkbox" />
+                                <label for="contact-option">
+                                    <small>
+                                        Θα ήθελα να ενημερώνομαι από το Renthub.
+                                    </small>
+                                </label>
+                            </div>
+                        </fieldset>
+                    </article>
+                    <fieldset id="questions">
+                        <legend>
+                            Ερωτηματολόγιο
+                        </legend>
+                        <h3>
+                            Ποιές περιοχές θα σε ενδιέφερε να κατοικήσεις/ εργαστείς;
+                        </h3>
+                        <label for="area-option">
+                            Περιοχές
+                        </label>
+                        <input list="options" name="area-option" id="area-option" placeholder="Περιοχές" type="text">
+                        <h3>
+                            Ποιός τύπος κατοικίας σου αρέσει;
+                        </h3>
+                        <label for="house-option">
+                            Είδη κατοικίας
+                        </label>
+                        <input list="house-options" name="house-option" id="house-option" type="text">
+                        <h3>
+                            Τι είδος εργασίας σε ενδιαφέρει;
+                        </h3>
+                        <label for="job">
+                        </label>
+                        <input autocomplete="job" id="job" minlength="4" name="job" placeholder="Εστίαση" title="job" type="text">
+                        <h3>
+                            Τι τύπος όχηματος θα σε ενδιέφερε να χρησιμοποιήσεις;
+                        </h3>
+                        <label for="car-option">
+                            Τύπος Οχήματος
+                        </label>
+                        <input list="car-options" name="car-option" id="car-option">
+                        <h3>
+                            Τι καύσιμο;
+                        </h3>
+                        <label for="fuel-option">
+                            Καύσιμο Οχήματος
+                        </label>
+                        <input list="fuel-options" name="fuel-option" id="fuel-option">
+                        <h3>
+                            Πως ήταν η εμπειρία σου με την Renthub;
+                        </h3>
+                        <section class="rating">
+                            <input id="experience-5" name="question-experience-satisfaction" type="radio" value="5" />
+                            <label for="experience-5">
+                                <img alt="5" id="img" src="../assets/verygood.png" title="VeryGood" />
+                            </label>
+                            <input id="experience-4" name="question-experience-satisfaction" type="radio" value="4" />
+                            <label for="experience-4">
+                                <img alt="4" id="img" src="../assets/good.png" title="Good" />
+                            </label>
+                            <input id="experience-3" name="question-experience-satisfaction" type="radio" value="3" />
+                            <label for="experience-3">
+                                <img alt="3" id="img" src="../assets/meh.png" title="Okay" />
+                            </label>
+                            <input id="experience-2" name="question-experience-satisfaction" type="radio" value="2" />
+                            <label for="experience-2">
+                                <img alt="2" id="img" src="../assets/bad.png" title="Bad" />
+                            </label>
+                            <input id="experience-1" name="question-experience-satisfaction" type="radio" value="1" />
+                            <label for="experience-1">
+                                <img alt="1" id="img" src="../assets/verybad.png" title="Very Bad" />
+                            </label>
+                        </section>
+                    </fieldset>
+                    </div>
+                    <datalist id="options">
+                        <option value="Αθήνα"></option>
+                        <option value="Αιγάλεω"></option>
+                        <option value="Ακαδημία (Αθήνα)"></option>
+                        <option value="Γκύζη"></option>
+                        <option value="Γουδή"></option>
+                        <option value="Εξάρχεια"></option>
+                        <option value="Κεραμεικός"></option>
+                        <option value="Κολωνάκι"></option>
+                        <option value="Κυψέλη"></option>
+                        <option value="Μοναστηράκι"></option>
+                        <option value="Παγκράτι"></option>
+                        <option value="Πατήσια"></option>
+                    </datalist>
+                    <datalist id="car-options">
+                        <option value="Φορτηγό"></option>
+                        <option value="Ιδιωτικής χρήσης"></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </datalist>
+                    <datalist id="house-options">
+                        <option value="Μεζονέτα"></option>
+                        <option value="Μονοκατοικία"></option>
+                        <option value="Στούντιο"></option>
+                        <option value="Γκαρσονιέρα"></option>
+                        <option value="Διάρι"></option>
+                    </datalist>
+                    <datalist id="fuel-options">
+                        <option value="Βενζινοκίνητο"></option>
+                        <option value="Πετρελαιοκίνητο"></option>
+                        <option value="Ηλεκτρικό"></option>
+                        <option value="Υβρίδιο"></option>
+                    </datalist>
+                    <div class="option">
+                        <input id="spam-option1" name="spam-option" required="" type="checkbox" />
+                        <label for="spam-option">
+                            <small>
+                                Κατανοώ και συμφωνώ με τους Όρους Συμφωνίας του Renthub.
+                            </small>
+                        </label>
+                    </div>
+                    <div class="option">
+                        <input id="spam-option2" name="spam-option" required="" type="checkbox" />
+                        <label for="spam-option">
+                            <small>
+                                Συμφωνώ με τα cookies και την πολιτική προσωπικών δεδομένων του Renthub.
+                            </small>
+                        </label>
+                    </div>
+                    <section id="button-group">
+                        <button id="sign-up-button" type="submit">
+                            Εγγραφή
+                        </button>
+                    </section>
+                </form>
+            </article>
+        </main>
+        <!-------------------------------------------------footer------------------------------------------------->
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <h3>About RentHub <div class="underline"></h3>
+                    <p>Η δημιουργία μιας ιστοσελίδας είναι πολύ περισσότερο από απλά κωδικοποίηση και σχεδιασμό, είναι η δημιουργία ενός 
+                    ψηφιακού κόσμου που αντικατοπτρίζει τη φύση και το όραμά μας. Στο <b>RentHub</b>, κατανοούμε τη σημασία της 
+                    δημιουργίας μιας ιστοσελίδας που εκφράζει την ταυτότητά μας και παρέχει μια ομαλή και ελκυστική εμπειρία στους 
+                    επισκέπτες μας. Είτε ψάχνετε για μια επαγγελματική ιστοσελίδα, ένα ηλεκτρονικό κατάστημα, είτε ένα blog, είμαστε
+                    εδώ για να σας βοηθήσουμε.
+                    </p>
+                </div>
+
+                <div class="col">
+                    <h3>Useful links <div class="underline"></h3>
+                    <ul>
+                        <li><i class="fa fa-home"></i>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li><i class="fa fa-users"></i>
+                            <a href="#">About us</a>
+                        </li>
+                        <li><i class="fa fa-address-book"></i>
+                            <a href="contactus.html">Contact us</a>
+                        </li>
+                        <li><i class="fa fa-book"></i>
+                            <a href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h3>Contact us <div class="underline"></h3>
+                    <ul>
+                        <li><i class="fa fa-envelope"></i>
+                            <p><a href="mailto:shinaki54@gmail.com">support@RentHub.gr</a></p>
+                        </li>
+                        <li><i class="fa fa-phone"></i>
+                            <p>+30 2108220905</p>
+                        </li>
+                        <li><i class="fa fa-map-marker"></i>
+                            <p>Πατησίων 76 10434 Αττική</p>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="col">
+                    <h3>Newsletter <div class="underline"></h3>
+                    <form>
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" placeholder="Enter your email" required> 
+                        <button type="submit"><i class="fa fa-chevron-circle-right"></i></button>
+                    </form>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/profile.php?id=100045173225167"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/schoinaki_maria"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/?lang=el"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://join.skype.com/invite/csRu6qfrXVCz"><i class="fa-brands fa-skype"></i></a>
+                        <a href="mailto:shinaki54@gmail.com"><i class="fa-brands fa-google"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">© RentHub.gr|Μαρία Σχοινάκη - Ελένη Κεχριώτη 2023</p>
+        </footer>
+    </body>     
+</html>

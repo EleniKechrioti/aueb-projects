@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!--------------------------------------------------title-------------------------------------------------->
+        <title>RentHub</title>
+        <!------------------------------------------------meta-tags------------------------------------------------>
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "Εξευρευνείστε τον μεγάλο μας κατάλογο ακινήτων, αυτοκινήτων, ειδών τεχνολογίας και θέσεων εργασίας. Βρείτε αυτό που ψάχνετε εύκολα και απλά σε ένα μόνο πάτημα!">
+        <meta name = "keywords" content = "ενοικιάσεις, πωλήσεις, ακίνητα, οχήματα, ενοικιάσεις ακινήτων, πωλήσεις ακινήτων, ενοικιάσεις οχημάτων, πωλήσεις οχημάτων, ενοικιάσεις αυτοκινήτων, πωλήσεις αυτοκινήτων, ενοικιάσεις μηχανών, πωλήσεις μηχανών, αγορά εργασίας, θέσεις εργασίας, δουλειά, τεχνολογία">
+        <meta name = "author" content = "Eleni Kechrioti, Maria Schoinaki">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="icon" href="../assets/logo.png" type="image/x-icon">
+        <script defer="" src="js.js"></script>
+    </head>
+
+    <body>
+        <!-----------------------------------------------header-tag------------------------------------------------>
+        <header>
+            <div class = "logo">
+              <a href = "index.html"><img src = "../assets/transparent_logo.png" width = "300px"></a>
+              <h3>RentHub</h3>
+            </div>
+            <div class = "lower-header">
+                <nav>
+                    <ul>
+                        <li><a href = "index.html">Αρχική</a></li>
+                        <li><a href = "categories.html">Κατηγορίες</a></li>
+                        <li><a href = "aboutus.html">Σχετικά με μας</a></li>
+                        <li><a href = "contactus.html">Επικοινωνία</a></li>
+                        <li>
+                            <section class="dropdown">
+                                <button class="dropbtn">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    Ο λογαριασμός μου
+                                </button>
+                                <section class="dropdown-content">
+                                    <li><a href = "#" >Δημιουργία</a></li>
+                                    <li><a href = "sign-up.html">Σύνδεση</a></li>
+                                </section>
+                            </section>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!---------------------------------------------------main-------------------------------------------------->
+
+        <h2>Ενοικίαση αυτοκινήτου</h2>
+        <p>Κωδικός αγγελίας: 01578</p>
+        <br>
+        <img src = "../assets/listings/cars/Audi_A3/1.jpg" width = "45%">
+
+        <h2><b>Audi A3 TDI Sportback 2019</b></h2>
+        <h2><b>€ 15.900 </b></h2> <span style = "color:green">(-10.0%)</span>  
+        
+        <p>
+            <i class="fa fa-road" aria-hidden="true"></i> 20.000 χλμ  
+            <i class="fa-solid fa-gas-pump"></i> diesel <br>
+            <i class="fa-solid fa-gauge-high"></i> 116hp 
+            <i class="fa-solid fa-oil-can"></i> 1600 cc
+
+            <h3>Περιγραφή</h3>
+            <p>Έχουν αλλαχτεί ιμάντες χρονισμού και αντλία νερού<br>
+            Έχει πάνω λάστιχα Pirelli ενός χρόνου με εγγύηση<br>
+            Έχει γίνει σέρβις πριν 5 μήνες<br>
+            Ελληνικής αντιπροσωπείας</p><br>
+            <p>Ατρακάριστο | Σε άριστη κατάσταση<br>
+            Ενημερώθηκε: 05/11/2023</p><br>
+            
+            <a href="cars.html">Για περισσότερα ακίνητα πατήστε εδώ</a> 
+        </p>
+         
+        <h3>Περισσότερες φωτογραφίες και πληροφοριες σχετικά με το ακίνητο <i class="fa fa-arrow-down" aria-hidden="true"></i></h3>
+
+        <br>
+        <div class="slideshow-container">
+            <div class="slide">
+                <img src = "../assets/listings/cars/Audi_A3/1.jpg">
+            </div>
+            <div class="slide">
+                <img src = "../assets/listings/cars/Audi_A3/2.jpg">
+            </div>
+            <div class="slide">
+                <img src = "../assets/listings/cars/Audi_A3/3.jpg">
+            </div>
+            <div class="slide">
+                <img src = "../assets/listings/cars/Audi_A3/4.jpg">
+            </div>
+            <div class="slide">
+                <img src = "../assets/listings/cars/Audi_A3/5.jpg">
+            </div>
+            <div class="slide">
+                <img src = "../assets/listings/cars/Audi_A3/6.jpg">
+            </div>
+            <div class="slide">
+                <img src = "../assets/listings/cars/Audi_A3/7.jpg">
+            </div>
+            <div class="slide">
+                <img src = "../assets/listings/cars/Audi_A3/8.jpg">
+            </div>
+
+            <a class="prev" onclick="prevSlide()">❮</a>
+            <a class="next" onclick="nextSlide()">❯</a>
+        </div>
+        
+        <div id="button-slides">
+            <span class="dot" onclick="currentSlide(1)">
+                <img src = "../assets/listings/cars/Audi_A3/1.jpg" style="width:100%">
+            </span> 
+            <span class="dot" onclick="currentSlide(2)">
+                <img src = "../assets/listings/cars/Audi_A3/2.jpg" style="width:100%">
+            </span> 
+            <span class="dot" onclick="currentSlide(3)">
+                <img src = "../assets/listings/cars/Audi_A3/3.jpg" style="width:100%">
+            </span>
+            <span class="dot" onclick="currentSlide(4)">
+                <img src = "../assets/listings/cars/Audi_A3/4.jpg" style="width:100%">
+            </span>
+            <span class="dot" onclick="currentSlide(5)">
+                <img src = "../assets/listings/cars/Audi_A3/5.jpg" style="width:100%">
+            </span>
+            <span class="dot" onclick="currentSlide(6)">
+                <img src = "../assets/listings/cars/Audi_A3/6.jpg" style="width:100%">
+            </span>
+            <span class="dot" onclick="currentSlide(7)">
+                <img src = "../assets/listings/cars/Audi_A3/7.jpg" style="width:100%">
+            </span>
+            <span class="dot" onclick="currentSlide(8)">
+                <img src = "../assets/listings/cars/Audi_A3/8.jpg" style="width:100%">
+            </span>
+        </div>
+        <table border="0">
+            <tr>
+                <th>Χαρακτηριστικά</th>
+            </tr>
+            <tr>
+                <td>Τιμή</td>
+                <td>15.900 €</td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-road" aria-hidden="true"></i> Χιλιόμετρα</td>
+                <td>20.000</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-gas-pump"></i> Καύσιμο</td>
+              <td>diesel</td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-gauge-high"></i> Ίπποι</td>
+                <td>116hp</td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-oil-can"></i> Κυβικά</td>
+                <td>1600 cc</td>
+            </tr>
+            <tr>
+              <td><i class="fa-solid fa-car"></i> Έτος Κατασκευής</td>
+              <td>2019</td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-star"></i> Κατάσταση</td>
+                <td>Άριστη</td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-temperature-arrow-up"></i> Θέρμανση</td>
+                <td>Aircondition</td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-location-dot"></i> Navigation</td>
+                <td>Satellite navigation</td>
+            </tr>
+            <tr>
+                <td><i class="fa-brands fa-bluetooth"></i> UI</td>
+                <td>Bluetooth-USB connectivity-Screen</td>
+            </tr>
+            <tr>
+                <td>Διαθέσιμο από</td>
+                <td>Άμεσα διαθέσιμο</td>
+            </tr>
+            <tr>
+                <td>Ημερομηνία Ανάρτησης</td>
+                <td>31/09/2023</td>
+            </tr>
+            <tr>
+                <td>Τελευταία Ενημέρωση</td>
+                <td>05/11/2023</td>
+            </tr>
+        </table>
+
+        <p>
+            <i class="fa fa-eye" aria-hidden="true"></i> 74
+        </p>
+        
+        <!-------------------------------------------------footer------------------------------------------------->
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <h3>About RentHub <div class="underline"></h3>
+                    <p>Η δημιουργία μιας ιστοσελίδας είναι πολύ περισσότερο από απλά κωδικοποίηση και σχεδιασμό, είναι η δημιουργία ενός 
+                    ψηφιακού κόσμου που αντικατοπτρίζει τη φύση και το όραμά μας. Στο <b>RentHub</b>, κατανοούμε τη σημασία της 
+                    δημιουργίας μιας ιστοσελίδας που εκφράζει την ταυτότητά μας και παρέχει μια ομαλή και ελκυστική εμπειρία στους 
+                    επισκέπτες μας. Είτε ψάχνετε για μια επαγγελματική ιστοσελίδα, ένα ηλεκτρονικό κατάστημα, είτε ένα blog, είμαστε
+                    εδώ για να σας βοηθήσουμε.
+                    </p>
+                </div>
+
+                <div class="col">
+                    <h3>Useful links <div class="underline"></h3>
+                    <ul>
+                        <li><i class="fa fa-home"></i>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li><i class="fa fa-users"></i>
+                            <a href="#">About us</a>
+                        </li>
+                        <li><i class="fa fa-address-book"></i>
+                            <a href="contactus.html">Contact us</a>
+                        </li>
+                        <li><i class="fa fa-book"></i>
+                            <a href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h3>Contact us <div class="underline"></h3>
+                    <ul>
+                        <li><i class="fa fa-envelope"></i>
+                            <p><a href="mailto:shinaki54@gmail.com">support@RentHub.gr</a></p>
+                        </li>
+                        <li><i class="fa fa-phone"></i>
+                            <p>+30 2108220905</p>
+                        </li>
+                        <li><i class="fa fa-map-marker"></i>
+                            <p>Πατησίων 76 10434 Αττική</p>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="col">
+                    <h3>Newsletter <div class="underline"></h3>
+                    <form>
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" placeholder="Enter your email" required> 
+                        <button type="submit"><i class="fa fa-chevron-circle-right"></i></button>
+                    </form>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/profile.php?id=100045173225167"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/schoinaki_maria"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/?lang=el"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://join.skype.com/invite/csRu6qfrXVCz"><i class="fa-brands fa-skype"></i></a>
+                        <a href="mailto:shinaki54@gmail.com"><i class="fa-brands fa-google"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">© RentHub.gr|Μαρία Σχοινάκη - Ελένη Κεχριώτη 2023</p>
+        </footer>
+    </body>     
+</html>
