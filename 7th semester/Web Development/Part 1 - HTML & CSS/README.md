@@ -34,3 +34,7 @@ This part of the project follows a structured development process divided into f
 
  HTML and CSS files have been validated using the [Markup Validation Service](https://validator.w3.org/) and the [CSS Validation Service](https://jigsaw.w3.org/css-validator/).
 
+ ## Contributors
+ * [Eleni Kechrioti](https://github.com/EleniKechrioti)
+ * [Maria Schoinaki](https://github.com/MariaSchoinaki)
+
