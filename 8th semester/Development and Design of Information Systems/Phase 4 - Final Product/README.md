@@ -1,0 +1,1 @@
+You can find the final phase of the assignment [here](https://github.com/EleniKechrioti/ACCESS). The final phase involves the final product, meaning the application.
