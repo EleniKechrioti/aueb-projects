@@ -1,0 +1,75 @@
+|alu_1_bit
+a => notx:u4.x
+b => notx:u5.x
+CarryIn => fulladder:u3.CarryIn
+operation[0] => ~NO_FANOUT~
+operation[1] => ~NO_FANOUT~
+ainvert => ~NO_FANOUT~
+binvert => ~NO_FANOUT~
+Result <= mux4to1:u6.Result
+CarryOut <= fulladder:u3.CarryOut
+
+
+|alu_1_bit|myAND:u0
+outA => outAND.IN0
+outB => outAND.IN1
+outAND <= outAND.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_1_bit|myOR:u1
+outA => outOR.IN0
+outB => outOR.IN1
+outOR <= outOR.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_1_bit|myXOR:u2
+outA => outXOR.IN0
+outB => outXOR.IN1
+outXOR <= outXOR.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_1_bit|fulladder:u3
+CarryIn => CarryOut.IN0
+CarryIn => CarryOut.IN0
+CarryIn => sum.IN1
+CarryIn => sum.IN1
+CarryIn => sum.IN1
+CarryIn => sum.IN1
+outA => CarryOut.IN1
+outA => sum.IN0
+outA => sum.IN0
+outA => sum.IN0
+outA => sum.IN0
+outB => CarryOut.IN1
+outB => sum.IN1
+outB => sum.IN1
+outB => sum.IN1
+outB => sum.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+CarryOut <= CarryOut.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_1_bit|notx:u4
+x => outx.DATAB
+x => outx.DATAA
+xinvert => outx.OUTPUTSELECT
+outx <= outx.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_1_bit|notx:u5
+x => outx.DATAB
+x => outx.DATAA
+xinvert => outx.OUTPUTSELECT
+outx <= outx.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_1_bit|mux4to1:u6
+outAND => Mux0.IN0
+outOR => Mux0.IN1
+sum => Mux0.IN2
+outXOR => Mux0.IN3
+operation[0] => Mux0.IN5
+operation[1] => Mux0.IN4
+Result <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

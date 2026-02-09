@@ -1,0 +1,38 @@
+|problem1
+x1 => oros1:I0.in1
+x2 => oros1:I0.in2
+x2 => oros2:I2.in1
+x2 => oros2:I1.in2
+x3 => ~NO_FANOUT~
+x4 => oros2:I1.in1
+x4 => oros1:I0.in3
+x5 => oros2:I2.in2
+f <= POS1:I3.out1
+
+
+|problem1|oros1:I0
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problem1|oros2:I1
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problem1|oros2:I2
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|problem1|POS1:I3
+in1 => out1.IN0
+in2 => out1.IN1
+in3 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
